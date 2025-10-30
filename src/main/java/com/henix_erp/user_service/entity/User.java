@@ -1,8 +1,8 @@
 package com.henix_erp.user_service.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.henix_erp.common_config.tenant.TenantEntity;
-import com.henix_erp.common_config.tenant.TenantEntityListener;
+import com.henix_erp.common.tenant.TenantEntity;
+import com.henix_erp.common.tenant.TenantEntityListener;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

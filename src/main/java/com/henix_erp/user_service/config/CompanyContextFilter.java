@@ -1,6 +1,6 @@
 package com.henix_erp.user_service.config;
 
-import com.henix_erp.common_config.tenant.CompanyContext;
+import com.henix_erp.common.tenant.CompanyContext;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpFilter;
@@ -28,7 +28,7 @@ public class CompanyContextFilter extends HttpFilter {
             System.out.println("Setting CompanyContext: " + companyIdHeader);
             chain.doFilter(request, response);
         } finally {
-            CompanyContext.removeCompanyId();
+            CompanyContext.clear();
         }
     }
 }
