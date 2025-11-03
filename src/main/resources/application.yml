@@ -3,9 +3,6 @@ spring:
     name: user-service
   config:
     import: "optional:configserver:http://localhost:8070/"
-  jpa:
-    properties:
-      hibernate.session_factory.statement_inspector: "com.henix_erp.common_config.tenant.CompanyStatementInspector"
 
 server:
   port: 8082
